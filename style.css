@@ -1,0 +1,695 @@
+/* NAVBAR */
+  .tablinks{
+    width: 100%;
+    display: inline;
+    color: black;
+    font-size: larger;
+  }
+
+/* End of navbar */
+
+.tab {
+  
+  border-style: solid;
+  overflow: hidden;
+  border-color: #000;
+  background-color: #fff;
+  width: 100%;
+  display: inline-flex;
+  font-family: monospace;
+  font-size: 20px;
+  
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    /*margin-top: 75px;*/
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+  
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+
+
+body {
+    /*background-image: linear-gradient(to bottom, #a6c0fe, #f68084);*/
+    background:url("bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    /*font-family: monospace;*/
+}
+
+
+img {
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    align-self: center;
+    box-shadow: #403b3b 2px 2px 5px;
+}
+
+.main {
+    margin: 25px 20px;
+    font-family: monospace;
+    color: #fff;
+}
+
+.board {
+    background-color: #333333;
+    padding: 33px;
+    border-radius: 50px;
+    margin: 25px 0px;
+}
+
+.board p {
+    text-align: justify;
+    font-size: 19px
+}
+
+/* footer {
+    color: #fff;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: blue;
+} */
+
+#more {display: none;
+transition-delay: 2s;}
+
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+  background-color: white;
+  color: #000000;
+  border-radius: 45px;
+  width: 3.2%;
+  border-color: black;
+}
+
+.topright:hover {color: red;}
+
+
+
+@media (min-width: 1000px){
+    .nav-links{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    .text {
+        width: 40%;
+        position: absolute;
+        margin-top: 135px;
+        margin-left: 85px;
+        font-size: 20px
+    }
+
+    img {
+        width: 380px;
+        float: left;
+        margin-top: 90px;
+    }
+
+    .main {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .board {
+        margin-top: 60px;
+        margin: auto;
+        margin: 20px;
+        width: 100%;
+    }
+}
+
+
+
+
+/*Toggle*/
+
+.container button {
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.form-container button {
+    background-image: #000000;
+}
+
+.container button:active {
+    transform: scale(0.95);
+}
+
+.container button:focus {
+    outline: none;
+}
+
+.container button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+/* .elements {
+    padding-top: 10px;
+    width: 100%;
+    border-radius: 20px;
+} */
+
+form {
+    background:url("bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+
+.container {
+    background:url("bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 690px;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 690px;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 690px;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.container.right-panel-active .overlay-container{
+    transform: translateX(-100%);
+}
+
+.overlay {
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #FFFFFF;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
+
+.social-container {
+    margin: 20px 0;
+}
+.social-container a:hover {
+background-color: #fff;
+    color: #000;
+text-decoration: none;
+}
+
+
+
+.social-container a {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+
+@media only screen and (min-width: 451px) and (max-width: 550px){
+    
+    .tabcontent .topright {
+        visibility: hidden;
+    }
+
+    .image {
+        width: 150px;
+        float: left;
+        /*margin-left: 60%;*/
+        margin-top: 90px;
+    }
+
+    .social-container {
+        margin:0px;
+        width: 200px;
+    }
+
+    .overlay h1 {
+        font-size: 30px;
+    }
+    
+    form h5{
+        font-size: 85%;
+        margin-left: 20px;
+        margin-right: 30px;
+        margin-top: -380px;
+        height: 50px;
+        width: 150%;
+        padding: 0;
+    }
+
+    .elements button {
+        height: 72%;
+       width: 30vw;
+
+    }
+
+    .overlay-container button{
+        height: 55px;
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 377px) and (max-width: 450px){
+    
+    .tabcontent .topright {
+        visibility: hidden;
+    }
+
+
+    .image {
+        width: 150px;
+        float: left;
+        /*margin-left: 60%;*/
+        margin-top: 90px;
+    }
+
+    .social-container {
+        margin:0px;
+        width: 200px;
+    }
+
+    .overlay h1 {
+        font-size: 30px;
+    }
+    
+    form h5{
+        font-size: 85%;
+        margin-left: 20px;
+        margin-right: 25px;
+        margin-top: -380px;
+        height: 50px;
+        width: 180%;
+        padding: 0;
+    }
+    
+
+    .elements button {
+        height: 72%;
+       width: 30vw;
+
+    }
+
+    .overlay-container button{
+        height: 55px;
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}
+     
+@media only screen and (min-width: 332px) and (max-width: 376px){
+    .tabcontent .topright {
+        visibility: hidden;
+    }
+
+
+    .main .board h1 {
+        font-size: 33px;;
+    }
+    .main .board h3 {
+        font-size: 28px;;
+    }
+
+    .image {
+        width: 150px;
+        float: left;
+        /*margin-left: 60%;*/
+        margin-top: 90px;
+    }
+
+    .social-container {
+        margin:0px;
+        width: 200px;
+    }
+
+    .overlay h1 {
+        font-size: 25px;
+    }
+    
+    form h5{
+        font-size: 85%;
+        margin-top: -480px;
+        height: 50px;
+        width: 180%;
+        padding: 0;
+    }
+    
+
+    .elements button {
+        height: 72%;
+       width: 30vw;
+
+    }
+
+    .overlay-container button{
+        height: 55px;
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 282px) and (max-width: 331px){
+
+    .tab {
+        width: 118%;
+    }
+    .board {
+        width: 120%;
+    }
+
+
+    .tabcontent .topright {
+        visibility: hidden;
+    }
+
+    .main .board h1 {
+        font-size: 30px;;
+    }
+    
+    .main .board h3 {
+        font-size: 25px;;
+    }
+    
+    
+    .container {
+    
+    width: 100%;
+    /*max-width: 100%;*/
+    height: 690px;
+    margin:0;
+    padding: 0;
+}
+
+    
+
+    .overlay-container {
+        width: 60%;
+        /*padding-left: 20px;*/
+        margin-left: 20px;
+    }
+
+    .form-container {
+        width: 55%;
+        padding-left: -20px;
+    }
+    .image {
+        width: 150px;
+        float: left;
+        /*margin-left: 60%;*/
+        margin-top: 90px;
+    }
+
+    .social-container {
+        margin:0px;
+        width: 200px;
+    }
+
+    .overlay h1 {
+        font-size: 25px;
+    }
+    
+    form h5{
+        font-size: 85%;
+        margin-left: -10px;
+        margin-right: -40px;
+        margin-top: -460px;
+        height: 50px;
+        width: 180%;
+        padding: 0;
+    }
+    
+
+    .elements button {
+        height: 72%;
+       width: 30vw;
+
+    }
+
+    .overlay-container button{
+        height: 55px;
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}
+
+/* IPAD */
+@media only screen and (min-width: 767px) and (max-width: 769px)
+{
+    .tabcontent .topright {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1025px)
+{
+    .tabcontent .topright {
+        width: 5%;
+    }
+    .tablinks {
+        font-size: x-large;
+    }
+}
+
+
+/* BUGSSSSSS */
+@media only screen and (max-width: 281px){
+    .tabcontent .topright {
+        visibility: hidden;
+    }
+
+    .tab {
+        width: 135%;
+    }
+    .board {
+        width: 150%;
+    }
+
+    .main .board h1 {
+        font-size: 23px;;
+    }
+
+    .main .board h3 {
+        font-size: 18px;;
+    }
+    
+    /* form {
+        padding-right: 0;
+        width: 100%;
+    } */
+    .container {
+    
+    width: 300%;
+    /*max-width: 100%;*/
+    height: 690px;
+    margin:0;
+    padding: 0;
+}
+    .overlay-container {
+        width: 70%;
+        /*padding-left: 20px;*/
+        margin-left: 40px;
+    }
+
+    .form-container {
+        width: 70%;
+        
+        
+    }
+    .image {
+        width: 150px;
+        float: left;
+        /*margin-left: 60%;*/
+        margin-top: 90px;
+    }
+
+    .social-container {
+        margin:0px;
+        width: 200px;
+    }
+
+    .overlay h1 {
+        font-size: 25px;
+    }
+    
+    form h5{
+        font-size: 85%;
+        margin-left: -30px;
+        margin-right: 0;
+        margin-top: -460px;
+        height: 50px;
+        width: 180%;
+        padding: 0;
+    }
+    
+
+    .elements button {
+        height: 72%;
+       width: 30vw;
+
+    }
+
+    .overlay-container button{
+        height: 55px;
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}
+
