@@ -98,13 +98,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="nav-links">
-                    <button class="tablinks" style="--i: .6s" onclick="openCity(event, 'Education')" id="defaultOpen">Education</button>
+                	<button class="tablinks" style="--i: .6s" onclick="openCity(event, 'Recommendations')" id="defaultOpen">Recommendations</button>
+                    <button class="tablinks" style="--i: .6s" onclick="openCity(event, 'Education')">Education</button>
                     <button class="tablinks" style="--i: .6s" onclick="openCity(event, 'Experience')">Experience</button>
                     <button class="tablinks" style="--i: .6s" onclick="openCity(event, 'Skills')">Skills</button>
                     <button class="tablinks" style="--i: .6s" onclick="openCity(event, 'Projects')">Projects</button>
-                    <button class="tablinks" style="--i: .6s" onclick="openCity(event, 'Achievements')">Achievements</button>
                     <button class="tablinks" style="--i: .6s" onclick="openCity(event, 'Volunteering')">Volunteering</button>
-                    <button class="tablinks" style="--i: .6s" onclick="openCity(event, 'Other')">Other</button>
+                    <button class="tablinks" style="--i: .6s" onclick="openCity(event, 'Events')">Events</button>
                 </div>
             </div>
         </div>
@@ -113,6 +113,45 @@
 
 
 <!-- Tab content -->
+<div id="Recommendations" class="tabcontent">
+	
+	<button onclick="this.parentElement.style.display='none'" class="topright">&times</button>
+  <div class="main">
+        <div class="board">
+            <div class="recs">
+				<img src="https://media-exp1.licdn.com/dms/image/C5603AQHhK2HCFy3nqg/profile-displayphoto-shrink_400_400/0/1578299195243?e=1640822400&v=beta&t=s93E4MiVjh3nTX3cvsvwKg-IZ1b0JkMYwhCf1HSJd1w" alt="Lee Stott" class = "recsimg">
+            	<h4><i>
+            	"Nihal is a highly capable individual, able to tackle complex and demanding challenges.<br><br>
+
+				His ability to think on his feet whilst working in high pressure situations made him an greatly valued member of the Microsoft Azure Health Bot, Microsoft Learn Module project development team.<br><br>
+				Nihal's activity was to lead the development of content for the Microsoft Learn Module and Learn Live Webinar. Nihal completed the work as a project within the Microsoft Learn Ambassadors Program, whilst studying for his degree. I have no hesitation in recommending him and wish him every success in his degree results."
+            </i>
+            <br><br><br> LEE STOTT,<br>Principal Cloud Advocate Manager at Microsoft<br>(Recommendation given on <a href="https://www.linkedin.com/in/nihal-dias">LinkedIn</a>)
+        </h4>
+            </div>
+            
+        </div>
+        <div class="board">
+        	<div class="recs">
+        		<img src="https://media-exp1.licdn.com/dms/image/C4E03AQGqPA-H74XP3Q/profile-displayphoto-shrink_400_400/0/1616034643935?e=1640822400&v=beta&t=jKGch97gZKHy3FzYzex_m_kMm7L0InKi9dIv6ddagdw" alt="Arjun Hariharan" class="recsimg">
+        		<h4><i>
+            	"A passionate learner and a hardworking member. Has a meticulous work ethic and a systematic work plan. Was a great experience working with Nihal. All the best for your future endeavors!"
+            </i>
+            <br><br><br>
+            
+            	ARJUN HARIHARAN,<br>COO at ALLSKIER Solutions Pvt. Ltd.<br>(Recommendation given on <a href="https://www.linkedin.com/in/nihal-dias">LinkedIn</a>)
+        </h4>
+            
+           
+        	</div>
+           
+            
+        </div>
+        
+    </div>
+  
+</div>
+
 <div id="Education" class="tabcontent">
 	<button onclick="this.parentElement.style.display='none'" class="topright">&times</button>
 <div class="main">
@@ -134,11 +173,37 @@
 	
 	<button onclick="this.parentElement.style.display='none'" class="topright">&times</button>
   <div class="main">
+  	<div class="board">
+        <h1>Intern - IT (10/21 - Present)</h1>
+        <h3>60mm</h3>
+         <p>
+         	<!-- <i><u>(Company Description)</u></i> <br> -->
+         <!-- As a part of ALLSKIER, I build cross-platform IoT based apps that interfaces with hardware to create fully fledged Edge Computing solutions -->
+     </p>
+
+     </div>
     <div class="board">
-        <h1>App Developer (07/21 - Present)</h1>
+        <h1>App Development Intern (07/21 - 09/21)</h1>
         <h3>ALLSKIER Solutions Pvt. Ltd.</h3>
          <p><i><u>ALLSKIER Solutions Pvt. Ltd. is an Edge Computing based Startup Company which designs and implements Edge computing systems for modern day needs.</u></i> 
-            <br>As a part of ALLSKIER, I build cross-platform IoT based apps that interfaces with hardware to create fully fledged Edge Computing solutions</p>
+            <br>As a part of ALLSKIER, I: 
+            <h5>
+            		<ul>
+            		<li>
+            			Worked on building cross-platform IoT based apps that interface with hardware to create fully-fledged Edge Computing solutions.
+            		</li>
+            		<li>
+            			Co-conducted a webinar, "Cloud Computing with Microsoft Azure" as part of their "7 days 7 stories" event where I explained the basics of Cloud Computing and Creating a VM on Microsoft Azure.
+            		</li>
+            		<li>
+            			 Co-conducted a webinar, "Fly with Flutter" where I explained the basics of Flutter and App Development.
+            		</li>
+            		<li>
+            			Co-authored a research paper, which was presented at the "International Conference on Artificial Intelligence, Computational Electronics and Communication System (AICECS 2021)" and will be published in the IOP Journal.
+            		</li>
+            	</ul>
+            	</h5>
+        </p>
 
      </div>
         <div class="board">
@@ -147,23 +212,7 @@
             <p><i><u>RUGVED is a Student Project recognized by MIT, Manipal which works in the field of AI robotics.</u></i> <br>I worked on implementing the mapping stack of SLAM using ROS on autonomous bots and also made an OpenCV model for lane detection.</p>
 
         </div>
-        <!-- <div class="board">
-           <h1>Core Team Member (10/2020 - Present)</h1>
-           <h3>Developer Student Clubs, MIT Manipal</h3>
-           <h5>
-           		<p>
-            	<ul>
-            		<li>
-            			Conducted a Workshop explaining VM creation as part of the 30 days of GCP program during October, 2020
-            		</li>
-            		<li>
-            			Established a partnership with univ.ai to conduct a talk by Geoffrey Hinton as well as a series of AI focused hackathons.
-            		</li>
-            	</ul>
-            </p>
-           </h5>
-            
-        </div> -->
+
         <div class="board">
            <h1>Piano Instructor (07/2020 - 02/2021)</h1>
            <h3>Chords & Co.</h3>
@@ -183,7 +232,7 @@
                    Languages used: <i>Python</i> 
                 </li>
                 <li>
-                Libraries used:<i> Tensorflow, Keras, Seaborn, OpenCV, Numpy, Pandas, Scikit-learn, Flask</i>
+                Libraries used:<i> Tensorflow, Keras, Seaborn, OpenCV, Numpy, Pandas, Scikit-learn</i>
                 </li>
                 <li>
                     Areas I've worked on:<i> AI in Healthcare, Language Understanding (LUIS), Computer Vision, Deep Learning, Recommender Systems, Prediction models</i>
@@ -199,7 +248,7 @@
                     Languages used: <i>HTML, CSS, JavaScript</i> 
                  </li>
                  <li>
-                 Libraries used:<i> Node-JS, Bootstrap </i>
+                 Libraries/Frameworks used:<i> Node-JS, Flask, MongoDB, ExpressJS, Bootstrap </i>
                  </li>
                  
              </ul>
@@ -212,7 +261,7 @@
                     Languages used: <i>Dart</i> 
                  </li>
                  <li>
-                 Libraries used: <i>Flutter, Firebase</i>
+                 Libraries/Frameworks used: <i>Flutter, Firebase, Node-JS, ExpressJS, MongoDB</i>
                  </li>
                  
              </ul>
@@ -231,7 +280,7 @@
                     Operating systems I'm familiar with:<i> Windows, Ubuntu, Manjaro</i>  
                 </li>
                 <li>
-                    Other technologies I know: <i>ROS, Git, GitHub, Azure Health Bot</i>
+                    Other technologies I know: <i>Azure Health Bot, ROS, Git, GitHub</i>
                 </li>
              </ul>
          </h4></div>
@@ -240,7 +289,7 @@
             <h4>
              <ul>
                  <li>
-                    Leadership 
+                    Emotional Intelligence 
                  </li>
                  <li>
                  Team Management
@@ -250,6 +299,9 @@
                  </li>
                  <li>
                     Teaching
+                 </li>
+                 <li>
+                    Leadership 
                  </li>
              </ul>
          </h4></div>
@@ -263,9 +315,6 @@
                  <li>
                     French
                  </li>
-                 <li>
-                     Japanese
-                </li>
                 <li>
                     Hindi
                </li>
@@ -287,56 +336,79 @@
   <div class="main">
     <div class="board">
         <h1>Microsoft Learn module for the Azure Health Bot</h1>
-         <p>Co-wrote the Language Understanding module for the Azure Health
-            Bot Learning path on the Microsoft Learn website<i> (to be published
-            by August 2021)</i></p>
-     </div>
-     <div class="board">
-        <h1>Detecting Parkinson's Disease through Biomedical Voice Measurements</h1>
-         <p>Using Ensemble Learning with the XGBoost Classifier, I differentiated healthy people from those with Parkinson's disease
-             based on a range of biomedical voice measurements.</i></p>
+         <p>I co-wrote the 'Language understanding in Azure Health Bot' module for the 'Create intelligent health bots with Azure Health Bot' Learning path on the Microsoft Learn website</p>
+            <a href="https://docs.microsoft.com/learn/modules/health-bot-language-understanding/" target="_blank">Click to view the module on Microsoft Learn</a>
      </div>
         <div class="board">
            <h1>Movie Recommendation System Web App</h1>
             <p>Built a content-based movie recommendation system and hosted it on Microsoft Azure as a web app using the Azure App Service. It
                 suggests movies which are similar to what you've already watched and is built using Python and ML libraries like flask, numpy, pandas,
-            sklearn and ast.</p>    
+            sklearn and ast.</p>
+            <a href="https://github.com/nrd26/Movie-Recommendation-System" target="_blank">Click to view the project on GitHub</a>
         </div>
         <div class="board">
            <h1>Pokedex App</h1>
-            <p>I built an app using Flutter that shows various Pokemon from Gen 1-6 with description, moves and other parameters. flutter_tts library is also used for converting Pokemon description into speech and playing it whenever the user checks description.</p>    
+            <p>I built an app using Flutter that shows various Pokemon from Gen 1-6 with description, moves and other parameters. flutter_tts library is also used for converting Pokemon description into speech and playing it whenever the user checks the description.</p>
+            <a href="https://github.com/nrd26/pokedex_app" target="_blank">Click to view the project on GitHub</a>  
         </div>
+        <div class="board">
+        <h1>Detecting Parkinson's Disease through Biomedical Voice Measurements</h1>
+         <p>Using Ensemble Learning with the XGBoost Classifier, I differentiated healthy people from those with Parkinson's disease
+             based on a range of biomedical voice measurements.</i></p>
+             <a href="https://github.com/nrd26/Parkinsons-Disease" target="_blank">Click to view the project on GitHub</a>
+     </div>
     </div>
   
 </div>
 
-<div id="Achievements" class="tabcontent">
-	
-	<button onclick="this.parentElement.style.display='none'" class="topright">&times</button>
-  <div class="main">
-        <div class="board">
-           <h1>Microsoft Learn Student Ambassador</h1>
-            <p>Microsoft Learn Student Ambassadors are a global group of campus
-				leaders who are eager to help fellow students, create robust tech
-				communities and develop technical and career skills for the future.</p>
-        </div>
-        
-    </div>
-  
-</div>
 
 <div id="Volunteering" class="tabcontent">
 	
 	<button onclick="this.parentElement.style.display='none'" class="topright">&times</button>
   <div class="main">
+  	<div class="board">
+           <h1>Microsoft Learn Student Ambassador (08/20 - Present)</h1>
+            <p><i>
+            	<u>
+            		Microsoft Learn Student Ambassadors are a global group of campus
+				leaders who are eager to help fellow students, create robust tech
+				communities and develop technical and career skills for the future.
+            	</u>
+            </i></p>
+            <p>
+            	As a Microsoft Learn Student Ambassador, I:
+            	<h5>
+            		<ul>
+            		<li>
+            			Contributed to the Microsoft Docs website by co-authoring the 'Language Understanding in the Azure Health Bot' module in the Azure Health Bot Learning Path.
+            		</li>
+            		<li>
+            			Talked about Language Understanding in the Azure Health Bot as part of a 4 episode learn live series on Microsoft Reactor.
+            		</li>
+            		<li>
+            			Co-conducted a workshop, ' Microsoft Azure Core Services: Compute' which gave a brief introduction to Azure as well as Cloud Computing concepts and also included a demo on how to create a VM in Azure.
+            		</li>
+            		<li>
+            			Co-conducted the workshop, ' Deploying Web Apps on the Cloud with Microsoft Azure ' where we explained Cloud Computing concepts, gave a demo on deploying a WordPress website on Azure and also a demo on how to create a Movie Recommendation Web App on Azure.
+            		</li>
+            	</ul>
+            	</h5>
+            </p>
+        </div>
+  	<div class="board">
+           <h1>Core Team Member at Developer Student Clubs, MIT Manipal (10/20 - 05/21)</h1>
+            <p>
+            	Co-conducted a workshop explaining Cloud Computing and VM Creation in GCP as part of the 30 days of GCP program during October, 2020 and also established a partnership with Univ Ai to conduct a talk by Geoffrey Hinton on "Part-whole hierarchies in neural networks" as well as a series of AI hackathons.
+                 </p>
+        </div>
         <div class="board">
-           <h1>Star Volunteer at Revels, MIT Manipal (03/2020)</h1>
+           <h1>Star Volunteer at Revels, MIT Manipal (03/20)</h1>
             <p>Generated a sevenfold increase in the participation to events of the
 			Animania category through a dedicated and target-based marketing
 			strategy.</p>
         </div>
         <div class="board">
-           <h1>ML workshop volunteer for IOSD, MIT Manipal (03/2020)</h1>
+           <h1>ML workshop volunteer for IOSD, MIT Manipal (03/20)</h1>
             <p>Helped participants with technical difficulties/doubts regarding OpenCV,
 			Object Detection and Linux</p>
         </div>
@@ -345,45 +417,63 @@
  
 </div>
 
-<div id="Other" class="tabcontent">
+<div id="Events" class="tabcontent">
 	
 	<button onclick="this.parentElement.style.display='none'" class="topright">&times</button>
   <div class="main">
-        <div class="board">
-           <h1>Workshops I've conducted</h1>
-            <p>
-            	<ul>
-                    <li>
-            			<h3>Fly with Flutter (21/07/2021)</h3>
-            			<h4>ALLSKIER Solutions Pvt. Ltd.</h4>
-            			<p>Conducted a professional webinar as part of the ALLSKIER Team on getting started with Flutter</p>
-            		</li>
-            		<li>
+       
+            			<div class="board">
+            			<h1>Learn Live - Learn Azure Health Bot: Adding scenarios to an Azure Health Bot (09/08/2021)</h1>
+            			<h3>Microsoft Reactor</h3>
+            			<p>I did a learn live session on the 'Language understanding in Azure Health Bot' module that I co-authored where I talked about Language Understanding (LUIS) and how to integrate it into the Azure Health Bot.
+            				<br><a href="https://www.youtube.com/watch?v=j2M1FwzPTvI&ab_channel=MicrosoftDeveloper" target="_blank">Watch on YouTube</a>
+            			</p>
+            			
+            			
+            		</div>
+            		<div class="board">
+            			<h1>Cloud Computing with Microsoft Azure (27/09/2021)</h1>
+            			<h3>ALLSKIER Solutions Pvt. Ltd</h3>
+            			<p>I did a tutorial video on Cloud Computing concepts as part of the ALLSKIER Team. After the video release, registered participants were sent instructions on how to create a VM on Azure and also had access to a live doubt clearing session with me.
+            				<br><a href="https://www.youtube.com/watch?v=Pwh8s7A5qaU" target="_blank">Watch on YouTube</a>
+            			</p>
+            			
+            			
+            		</div>
+            		<div class="board">
+            			<h1>Fly with Flutter (21/07/2021)</h1>
+            			<h3>ALLSKIER Solutions Pvt. Ltd.</h3>
+            			<p>Co-conducted a professional webinar as part of the ALLSKIER Team on getting started with Flutter
+            			<br><a href="https://www.youtube.com/watch?v=fvSofm0NtRo" target="_blank">Watch on YouTube</a>
+            			</p>
+            			
+            		</div>
+<!--             		<div class="board">
             			<h3>Git and GitHub Workshop (13/12/2020)</h3>
             			<h4>Manipal Information Security Team, MIT Manipal</h4>
-            			<p>Conducted an internal workshop for the incoming members on navigating through GitHub and various concepts of Git on the Linux OS</p>
-            		</li>
-            		<li>
-            			<h3>30 Days of GCP Workshop (27/10/2020)</h3>
-            			<h4>Developer Student Clubs, MIT Manipal</h4>
-            			<p>Conducted an internal workshop for the participants of the 30 Days of GCP Program explaining basic concepts of Cloud Computing and VM Creation on GCP</p>
-            		</li>
-            		<li>
-            			<h3>Microsoft Azure Core Services: Compute (27/09/2020)</h3>
-            			<h4>Microsoft Learn Student Ambassadors</h4>
-            			<p>Conducted a workshop explaining basic concepts of Cloud Computing and VM Creation on Azure</p>
-            		</li>
-            		<li>
-            			<h3>Deploying Web Apps on the Cloud using Azure (13/09/2020)</h3>
-            			<h4>Microsoft Learn Student Ambassadors</h4>
-            			<p>Conducted a workshop explaining basic concepts of Cloud Computing and Deployment of an ML Web App on Azure</p>
-            		</li>
-            	</ul>
-			
-			
-        	</p>
-        </div>
-        
+            			<p>Conducted an internal workshop for the incoming members on navigating through GitHub and various concepts of Git on a Linux OS
+            			</p>
+            			
+            		</div> -->
+            		<div class="board">
+            			<h1>30 Days of GCP Workshop (27/10/2020)</h1>
+            			<h3>Developer Student Clubs, MIT Manipal</h3>
+            			<p>Co-conducted an internal workshop for the participants of the 30 Days of GCP Program explaining basic concepts of Cloud Computing and VM Creation on GCP</p>
+            			
+            		</div>
+            		<div class="board">
+            			<h1>Microsoft Azure Core Services: Compute (27/09/2020)</h1>
+            			<h3>Microsoft Learn Student Ambassadors</h3>
+            			<p>Co-conducted a workshop explaining Cloud Computing and VM Creation on Azure</p>
+            			
+            		</div>
+            		<div class="board">
+            			<h1>Deploying Web Apps on the Cloud using Azure (13/09/2020)</h1>
+            			<h3>Microsoft Learn Student Ambassadors</h3>
+            			<p>Co-conducted a workshop explaining Cloud Computing and the deployment of an ML Web App on Azure</p>
+            			
+            		</div>
+            	
     </div>
   
 </div>

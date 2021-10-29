@@ -1,3 +1,14 @@
+.recs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.recsimg{
+    margin-right: 100px;
+}
+
 /* NAVBAR */
   .tablinks{
     width: 100%;
@@ -146,6 +157,16 @@ transition-delay: 2s;}
 
 
 @media (min-width: 1000px){
+    /*.recs{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.recsimg{
+    margin-right: 0px;
+}*/
+
     .nav-links{
         width: 100%;
         display: flex;
@@ -365,6 +386,18 @@ text-decoration: none;
 }
 
 @media only screen and (min-width: 451px) and (max-width: 550px){
+
+    .recs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.recsimg{
+    margin-right: 0px;
+    margin-bottom: 50px;
+}
     
     .tabcontent .topright {
         visibility: hidden;
@@ -411,6 +444,18 @@ text-decoration: none;
 }
 
 @media only screen and (min-width: 377px) and (max-width: 450px){
+    .recs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.recsimg{
+    margin-right: 0px;
+    margin-bottom: 50px;
+}
+
     .main .board h1 {
         font-size: 33px;;
     }
@@ -465,6 +510,18 @@ text-decoration: none;
 }
      
 @media only screen and (min-width: 332px) and (max-width: 376px){
+    .recs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.recsimg{
+    margin-right: 0px;
+    margin-bottom: 50px;
+}
+
     .tabcontent .topright {
         visibility: hidden;
     }
@@ -517,6 +574,17 @@ text-decoration: none;
 }
 
 @media only screen and (min-width: 301px) and (max-width: 331px){
+    .recs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.recsimg{
+    margin-right: 0px;
+    margin-bottom: 50px;
+}
 
     .tab {
         width: 118%;
@@ -604,6 +672,17 @@ text-decoration: none;
 /* IPAD */
 @media only screen and (min-width: 767px) and (max-width: 769px)
 {
+    .recs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.recsimg{
+    margin-right: 0px;
+    margin-bottom: 100px;
+}
     .tabcontent .topright {
         visibility: hidden;
     }
@@ -622,6 +701,16 @@ text-decoration: none;
 
 /* BUGSSSSSS */
 @media only screen and (max-width: 300px){
+    .recs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.recsimg{
+    margin-right: 0px;
+}
     .tabcontent .topright {
         visibility: hidden;
     }
